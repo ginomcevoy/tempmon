@@ -7,7 +7,7 @@
 HOST_FILE=hosts
 
 # Frequency of monitoring in seconds
-SENSOR_INTERVAL=10
+SENSOR_INTERVAL=3600
 
 # Directory that will hold output data
 OUTPUT_DIR=data

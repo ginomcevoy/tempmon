@@ -1,0 +1,20 @@
+# config file
+# Holds configuration parameters for tempmon 
+# Created by: Giacomo Mc Evoy - giacomo@lncc.br
+# LNCC 2015
+
+# File containing hostnames to monitor
+HOST_FILE=hosts
+
+# Frequency of monitoring in seconds
+SENSOR_INTERVAL=10
+
+# Directory that will hold output data
+OUTPUT_DIR=data
+
+# Other parameters
+LOG_FILE=monitor.log
+EXEC_PID=monitor.pid
+BMC_USER=admin
+BMC_PASS=admin
+DATE_FORMAT='%Y-%m-%d %H:%M:%S'

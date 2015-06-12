@@ -3,7 +3,7 @@
 # do-tempmon-single.sh
 # Uses ipmitool in a single machine, appends relevant 
 # data to local CSV file
-# Requires sourced configuration file
+#
 # Parameters:
 # hostname: hostname of target machine
 # csvFile: output file of sensor data

@@ -77,7 +77,7 @@ def appendSensorData(sensorItem, outputFilename):
 	csvWriter = None
 	if os.path.isfile(outputFilename):
 		csvFile = open(outputFilename, 'a')
-		csvWriter = csv.writer(csvFile, delimiter=';',
+		csvWriter = csv.writer(csvFile, delimiter=',',
 	                      lineterminator='\n', quotechar='|', quoting=csv.QUOTE_MINIMAL)
 		
 	else:
@@ -87,7 +87,7 @@ def appendSensorData(sensorItem, outputFilename):
 
 		# file does not exist, create it with a header
 		csvFile = open(outputFilename, 'w')
-		csvWriter = csv.writer(csvFile, delimiter=';',
+		csvWriter = csv.writer(csvFile, delimiter=',',
 	                        lineterminator='\n', quotechar='|', quoting=csv.QUOTE_MINIMAL)
 		header = __createHeader__(sensorItem)
 		csvWriter.writerow(header)
@@ -98,8 +98,8 @@ def appendSensorData(sensorItem, outputFilename):
 	
 def __createHeader__(sensorItem):
 	'''
-	Creates the header string using provided metadata, example:
-	timeStamp;cpu1;cpu2;systemTemp;fan1;fan2;fan3;fan4
+	Creates the header list using provided metadata, example:
+	[timeStamp,cpu1,cpu2,systemTemp,fan1,fan2,fan3,fan4]
 	:param sensorItem: populated SensorItem instance, for metadata 
 	'''
 	header = ['timeStamp']

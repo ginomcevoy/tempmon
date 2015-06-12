@@ -1,2 +1,2 @@
-timeStamp;CPU1;CPU2;systemTemp;fan1;fan2;fan3;fan4
-1999-01-08 04:05:06;29.0;28.0;23.0;14040.0;14040.0;14040.0;na
+timeStamp,CPU1,CPU2,systemTemp,fan1,fan2,fan3,fan4
+1999-01-08 04:05:06,29.0,28.0,23.0,14040.0,14040.0,14040.0,na

@@ -14,7 +14,7 @@ OUTPUT_DIR=data
 
 # Other parameters
 LOG_FILE=monitor.log
-EXEC_PID=monitor.pid
+PID_FILE=monitor.pid
 BMC_USER=admin
 BMC_PASS=admin
 DATE_FORMAT='%Y-%m-%d %H:%M:%S'

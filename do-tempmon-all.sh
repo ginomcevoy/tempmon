@@ -1,4 +1,4 @@
-#!/bin/bash -x
+#!/bin/bash
 
 # do-tempmon-all.sh
 # Gathers sensor data on multiple machines, according to host file

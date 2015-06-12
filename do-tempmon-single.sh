@@ -1,4 +1,4 @@
-#!/bin/bash -x
+#!/bin/bash
 
 # do-tempmon-single.sh
 # Uses ipmitool in a single machine, appends relevant 

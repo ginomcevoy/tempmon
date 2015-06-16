@@ -10,7 +10,7 @@ HOST_FILE=hosts
 SENSOR_INTERVAL=3600
 
 # Directory that will hold output data
-OUTPUT_DIR=data
+OUTPUT_DIR=$HOME/ipmi-data
 
 # Other parameters
 LOG_FILE=monitor.log

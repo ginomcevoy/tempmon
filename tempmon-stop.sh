@@ -14,8 +14,14 @@
 LOCAL_DIR="$( cd "$( dirname "$0" )" && pwd )"
 source $LOCAL_DIR/config
 
-# Stop monitoring by killing the main process and its children (each host call)
-PID=$(cat $PID_FILE)
-pkill -TERM -P $PID && kill -TERM $PID
+# Check for PID file
+if [[ -f $PID_FILE ]]; then
 
-rm $PID_FILE
+	# Stop monitoring by killing the main process and its children (each host call)
+	PID=$(cat $PID_FILE)
+	pkill -TERM -P $PID && kill -TERM $PID
+
+	rm $PID_FILE
+else
+	>&2 echo "Tempmon is not running (PID file not present)."
+fi

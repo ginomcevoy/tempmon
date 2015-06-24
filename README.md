@@ -22,6 +22,7 @@ Distributed Temperature Monitor using IPMI
 ## Output:
 - One CSV file is generated for each node, in the directory indicated by ``OUTPUT_DIR`` parameter in the ``config`` file.
 - CSV Format: 
-|timeStamp | CPU1 | ... | CPUx | systemTemp | fan1 | ... | fanY |
-| ------ | -----| ------| ------| ------| ------| ------| ------
-|2015-06-12 19:20:56 | 23 | ...| 29 | 21 | 14040 |	...	na |
+
+| timeStamp | CPU1 | ... | CPUx | systemTemp | fan1 | ... | fanY |
+| ------ | ----- | ------ | ------ | ------ | ------ | ------ | ------ |
+|2015-06-12 19:20:56 | 23 | ...| 29 | 21 | 14040 |	...	| na |

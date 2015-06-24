@@ -7,9 +7,10 @@ Distributed Temperature Monitor using IPMI
 - The head server must be able to reach the nodes via an IPMI address
 
 ## Usage:
-- ./tempmon-start.sh to start monitoring the nodes
-- ./tempmon-stop.sh to stop monitoring the nodes
-- ./tempmon-status.sh query the state of Tempmon
+- ``./tempmon-start.sh``: start monitoring the nodes
+- ``./tempmon-stop.sh``: stop monitoring the nodes
+- ``./tempmon-status.sh``: query the state of Tempmon
+- ``./test.sh`` for unit tests
 
 ## Configuration:
 - ``hosts`` file: list the hostnames or IP addresses of the nodes to monitor. If using hostnames, these should be resolved via the ``/etc/hosts`` file.
@@ -17,3 +18,9 @@ Distributed Temperature Monitor using IPMI
   - ``SENSOR_INTERVAL``: frequency of monitoring, in seconds (default: 3600 seconds / 1 hour)
   - ``OUTPUT_DIR``: directory that will hold output data (default: ``$HOME/ipmi-data``)
   - ``HOST_FILE``: indicates host file to read (default: ``hosts``)
+
+## Output:
+- One CSV file is generated for each node, in the directory indicated by ``OUTPUT_DIR`` parameter in the ``config`` file.
+- CSV Format: 
+|timeStamp | CPU1 | ... | CPUx | systemTemp | fan1 | ... | fanY |
+| ------ | -----| ------| ------| ------| ------| ------| ------
